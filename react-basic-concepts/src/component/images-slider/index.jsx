@@ -49,7 +49,7 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
         className="arrow arrow-left"
       />
       {images && images.length
-        ? images.map((imageItem,index) => (
+        ? images.map((imageItem, index) => (
             <img
               key={imageItem.id}
               alt={imageItem.download_url}
