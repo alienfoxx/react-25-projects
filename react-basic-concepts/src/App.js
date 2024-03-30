@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordian from "./component/accordian";
 import ImageSlider from "./component/images-slider";
+import LightDarkMode from "./component/light-darck-mode/idex";
 import LoadMoreProducts from "./component/load-more-product";
 import QRCodeGenerator from "./component/qr-code-genartor";
 import RandomColor from "./component/random-color";
@@ -29,7 +30,9 @@ function App() {
       {/* Menu tree view component /menu UI component/recursive navigation menu */}
       {/* <TreeView menus={menus}/> */}
       {/* QR Code Generator Component */}
-      <QRCodeGenerator/>
+      {/* <QRCodeGenerator/> */}
+      {/* dark light mode theme switcher Component */}
+      <LightDarkMode/>
     </div>
   );
 }
