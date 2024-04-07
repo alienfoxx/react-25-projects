@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DiVim } from "react-icons/di";
+import "./styles.css";
 
 export default function ScrollIndicator({ url }) {
   const [data, setData] = useState([]);
@@ -13,13 +13,11 @@ export default function ScrollIndicator({ url }) {
       const response = await fetch(getUrl);
       const data = await response.json();
 
-      console.log(data);
       if (data && data.products && data.products.length > 0) {
         setData(data.products);
         setLoading(false);
       }
     } catch (e) {
-      console.log(e);
       setErrorMessage(e.message);
     }
   }
