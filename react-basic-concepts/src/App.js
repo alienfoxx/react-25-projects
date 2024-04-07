@@ -5,6 +5,7 @@ import LightDarkMode from "./component/light-darck-mode/idex";
 import LoadMoreProducts from "./component/load-more-product";
 import QRCodeGenerator from "./component/qr-code-genartor";
 import RandomColor from "./component/random-color";
+import ScrollIndicator from "./component/scroll-indicator";
 import StarRating from "./component/star-rating";
 import TreeView from "./component/tree-view";
 import menus from "./component/tree-view/data";
@@ -32,7 +33,9 @@ function App() {
       {/* QR Code Generator Component */}
       {/* <QRCodeGenerator/> */}
       {/* dark light mode theme switcher Component */}
-      <LightDarkMode/>
+      {/* <LightDarkMode/> */}
+      {/* Scrooll indcator Component */}
+      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/>
     </div>
   );
 }
