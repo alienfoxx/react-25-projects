@@ -4,6 +4,7 @@ import TabTest from "./component/custom-tabs/tabs-test";
 import ImageSlider from "./component/images-slider";
 import LightDarkMode from "./component/light-darck-mode/idex";
 import LoadMoreProducts from "./component/load-more-product";
+import ModalTest from "./component/modal-popup/modal-test";
 import QRCodeGenerator from "./component/qr-code-genartor";
 import RandomColor from "./component/random-color";
 import ScrollIndicator from "./component/scroll-indicator";
@@ -38,7 +39,9 @@ function App() {
       {/* Scrooll indcator Component */}
       {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
       {/* Custom Tabs component */}
-      <TabTest/>
+      {/* <TabTest/> */}
+      {/* Modal Popup Component */}
+      <ModalTest/>
     </div>
   );
 }
