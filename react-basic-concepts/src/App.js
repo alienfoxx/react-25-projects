@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordian from "./component/accordian";
 import TabTest from "./component/custom-tabs/tabs-test";
+import GithubProfileFinder from "./component/github-Finder";
 import ImageSlider from "./component/images-slider";
 import LightDarkMode from "./component/light-darck-mode/idex";
 import LoadMoreProducts from "./component/load-more-product";
@@ -41,7 +42,9 @@ function App() {
       {/* Custom Tabs component */}
       {/* <TabTest/> */}
       {/* Modal Popup Component */}
-      <ModalTest/>
+      {/* <ModalTest/> */}
+      {/* Github Finder Component */}
+      <GithubProfileFinder/>
     </div>
   );
 }

@@ -41,3 +41,11 @@
 
   background-color: #fff;
 }
+ @keyframes animateModal{
+  from{
+    top:-200px;
+  }
+  to{
+    top:0;
+  }
+ }
