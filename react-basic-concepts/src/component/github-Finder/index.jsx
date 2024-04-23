@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import User from "./card";
+import "./style.css";
 
 export default function GithubProfileFinder() {
   const [username, setUserName] = useState("alienfoxx");
-  const [userData, setUserData] = useState (null);
-  const [loading, setLoading] = useState(false);
+  const [userData, setUserData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   async function fetchGithubData() {
     setLoading(true);
@@ -13,6 +15,7 @@ export default function GithubProfileFinder() {
     if (data) {
       setUserData(data);
       setLoading(false);
+      setUserName("");
     }
   }
   useEffect(() => {
@@ -22,7 +25,9 @@ export default function GithubProfileFinder() {
     return <h1>Loading data ! Please Wait</h1>;
   }
 
-  function handelSubmit() {}
+  function handelSubmit() {
+    fetchGithubData();
+  }
 
   return (
     <div className="github-profile-container">
@@ -36,6 +41,7 @@ export default function GithubProfileFinder() {
         />
         <button onClick={handelSubmit}>Find</button>
       </div>
+      {userData !== null ? <User user={userData} /> : null}
     </div>
   );
 }
