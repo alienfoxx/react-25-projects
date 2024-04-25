@@ -9,6 +9,7 @@ import ModalTest from "./component/modal-popup/modal-test";
 import QRCodeGenerator from "./component/qr-code-genartor";
 import RandomColor from "./component/random-color";
 import ScrollIndicator from "./component/scroll-indicator";
+import SearchAutoComplete from "./component/search-auto-complete";
 import StarRating from "./component/star-rating";
 import TreeView from "./component/tree-view";
 import menus from "./component/tree-view/data";
@@ -44,7 +45,10 @@ function App() {
       {/* Modal Popup Component */}
       {/* <ModalTest/> */}
       {/* Github Finder Component */}
-      <GithubProfileFinder/>
+      {/* <GithubProfileFinder/> */}
+
+      {/* serach Auto Complete component */}
+      <SearchAutoComplete/>
     </div>
   );
 }

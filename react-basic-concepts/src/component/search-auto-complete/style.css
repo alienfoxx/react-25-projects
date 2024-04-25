@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(221, 81, 81);
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.serach-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 20px;
+  width: 500px;
+  min-width: 450px;
+  border: none;
+  background-color: rgb(255, 227, 222);
+  border-radius: 8px;
+  box-shadow: 1px 0 5px;
+}
+.item {
+}
