@@ -1,6 +1,10 @@
 import "./App.css";
 import Accordian from "./component/accordian";
 import TabTest from "./component/custom-tabs/tabs-test";
+import FeatureFlags from "./component/feauture-flag";
+import FeatureFlagGlobalState, {
+  FeatureFlagContext,
+} from "./component/feauture-flag/context";
 import GithubProfileFinder from "./component/github-Finder";
 import ImageSlider from "./component/images-slider";
 import LightDarkMode from "./component/light-darck-mode/idex";
@@ -51,7 +55,11 @@ function App() {
       {/* serach Auto Complete component */}
       {/* <SearchAutoComplete/> */}
       {/* tic-tac-toe Componenent */}
-      <TictacToe />
+      {/* <TictacToe /> */}
+      {/* Feauture Flag Implementation */}
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </div>
   );
 }
